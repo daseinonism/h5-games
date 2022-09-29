@@ -1,0 +1,20 @@
+question0：
+css中width和height实际上是将原来300x150的画布拉伸，造成图像变形，因此一般在画布标签中改变其长宽。
+canvas标签中设置的宽高为其在页面中占据大小，也就是说当css设置大小(eg:700x700)和canvas(eg:100x100)不同时，先取一空间绘制700x700图像，再将图像缩放进100x100实际空间中
+question1:
+const myCanvas = document.getElementById('canvas') 该语句使得myCanvas获取了canvas元素(有const的话也可以说是绑定该元素)，后续对画布操作时候用“myCanvas.getContext”即可
+引用类型
+
+若myCanvas为画布，则返回2d对象，否则返回undefined
+question2:
+setInterval函数按照固定频率渲染动画，requestAnimationFrame也可按照固定频率渲染，但是可以避免跳帧
+在使用者切换到其他网页时，requestAnimation会停止渲染，避免性能浪费
+
+心得体会
+1.最初不会设计动画，于是去图书馆借阅了两本html5游戏开发书籍，将书上提供的代码自己敲了一遍后，意识到动画主要是一个接一个的构造函数的嵌套（有点像oi中的跨越多个函数的递归），然后就仿照书上的例子自己写了该项目的第一版。
+2.学习js语言后，我意识到（也是看网上大神建议）要把js,css,html三个模块分离，（据说这样便于管理）
+3.不同于c++等语言，js里面有大量的对象，写代码时候需要查阅书籍来了解不同对象的使用方法
+4.用alert可以更方便地输出（用于调试bug），虽然console.log也可以调试
+5.将图片不压住网格线（80x80格子放置78x78的图片效果更好）
+评分：9分？
+虽然文章很容易让人上手html,css,js，但是标题有一点点让人难以接受QAQ

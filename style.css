@@ -1,0 +1,27 @@
+.align_center {
+            text-align: center;
+        }
+
+        .align_center p {
+            margin-top: 10px;
+            font-family: "Blackadder ITC";
+            font-size: xx-large;
+        }
+
+        .align_center img {
+            width: 0;
+            height: 0;
+            display: none
+        }
+		
+		form{
+			width:200px; 
+			margin-left:50px; 
+			background-color:yellowgreen;
+			padding-left: 50px;
+		}
+	
+        #my_canvas {
+            aspect-ratio: auto 320 / 480;
+            border: solid;
+        }

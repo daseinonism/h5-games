@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>My Web Page</title>
+    <meta http-equiv="refresh">
+	<audio  id="voice" src="yep.mp3"></audio>
+	<!--应当最先加载声音，否则getelementbyid无法正常运行-->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!--引入css样式-->
+    <script src="drawall.js"> 
+    </script>
+	
+</head>
+<body>
+<h1 class="align_center">My First Web Page</h1>
+<div class="align_center">
+    <canvas id="my_canvas" width="320" height="480"></canvas>
+    <img src="zju.png"/>
+	<img src="zju2.png"/>
+</div>
+<form name="f">
+	Score:<input name="score" value="0" size="3"/>
+	<br>
+	LeftTime:<input name="lefttime" value="30.000" size="3"/>
+	<br>
+	<input id="button" type="button" value="点击重新开始" onClick="location.reload();"/>
+	</form>
+
+<div class="align_center">
+    <p>Shall I compare thee to a summer's day?</p>
+    <p>Thou art more lovely and more temperate:</p>
+    <p>Rough winds do shake the darling buds of May,</p>
+    <p>And summer's lease hath all too short a date;</p>
+    <p>Sometime too hot the eye of heaven shines,</p>
+    <p>And often is his gold complexion dimmed,</p>
+    <p>And every fair from fair sometime declines,</p>
+    <p>By chance, or nature's changing course untrimmed:</p>
+    <p>But thy eternal summer shall not fade,</p>
+    <p>Nor lose possession of that fair thou ow'st;</p>
+    <p>Nor shall Death brag thou wand'rest in his shade,</p>
+    <p>When in eternal lines to time thou grow'st.</p>
+    <p>So long as men can breathe, or eyes can see,</p>
+    <p>So long lives this, and this gives life to thee.</p>
+</div>
+</body>
+</html>
